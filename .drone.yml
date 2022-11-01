@@ -13,7 +13,7 @@ steps:
 - name: build-latest
   image: plugins/docker
   settings:
-    repo: lha-on-docker
+    repo: walkero/lha-on-docker
     tags:
       - latest-amd64
     cache_from:
@@ -47,7 +47,7 @@ steps:
 - name: build-latest
   image: plugins/docker
   settings:
-    repo: lha-on-docker
+    repo: walkero/lha-on-docker
     tags:
       - latest-arm64
     cache_from:
@@ -78,8 +78,8 @@ steps:
       from_secret: DOCKERHUB_USERNAME
     password:
       from_secret: DOCKERHUB_PASSWORD
-    target: lha-on-docker:latest
-    template: lha-on-docker:latest-ARCH
+    target: walkero/lha-on-docker:latest
+    template: walkero/lha-on-docker:latest-ARCH
     platforms:
       - linux/amd64
       - linux/arm64
@@ -95,5 +95,3 @@ trigger:
   event:
     include:
     - push
-
-
