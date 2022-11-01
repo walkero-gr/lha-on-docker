@@ -71,7 +71,7 @@ kind: pipeline
 name: manifest-latest
 
 steps:
-- name: manifest-base-latest
+- name: manifest-latest
   image: plugins/manifest
   settings:
     username:
