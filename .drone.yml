@@ -27,7 +27,7 @@ steps:
 trigger:
   branch:
     include:
-    - master
+    - main
   event:
     include:
     - push
@@ -61,7 +61,7 @@ steps:
 trigger:
   branch:
     include:
-    - master
+    - main
   event:
     include:
     - push
@@ -91,7 +91,7 @@ depends_on:
 trigger:
   branch:
     include:
-    - master
+    - main
   event:
     include:
     - push
