@@ -24,6 +24,6 @@ RUN apt-get -y --no-install-recommends install ${PACKAGES}; \
     ../lha/configure --prefix=/usr && \
     make && \
     make install; \
-    apt -y remove ${PACKAGES}; \
-    apt -y autoremove; \
+    apt-get -y remove ${PACKAGES}; \
+    apt-get -y autoremove; \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*;
