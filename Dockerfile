@@ -1,5 +1,5 @@
 # The ubuntu:latest tag points to the "latest LTS", since that's the version recommended for general use.
-FROM ubuntu:latest
+FROM ubuntu:22.10
 
 LABEL maintainer="Georgios Sokianos <walkero@gmail.com>"
 
